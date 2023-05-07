@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <DisableWinExeOutputInference>True</DisableWinExeOutputInference>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DB\DB.csproj" />
+      <ProjectReference Include="..\MvvmTools\MvvmTools.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="schools.csv">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="teachers.csv">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
